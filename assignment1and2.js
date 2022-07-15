@@ -38,13 +38,11 @@ class KioskCalc{
         "mango": 15, 
         "avocado": 40  
         };
-        this.getTotalCost = () => {
-            return `${this.quantity} ${this.fruit} for KES ${parseFloat(this.fruitsPriceList.orange *this.quantity)}`
+        this.getTotalCost =  function()  {
+            return `${quantity} ${fruit} for KES ${this.price *quantity}`
         }
     }
 }
-var KioskCalc1 = new KioskCalc('orange', 2)
-var KioskCalc2 = new KioskCalc('mango', 5)
-
-console.log(KioskCalc1.getTotalCost());
-console.log(KioskCalc2.getTotalCost());
+KioskCalc.prototype.price = 30;
+var buy = new KioskCalc(`kiwi`, 4);
+console.log(buy.getTotalCost());
