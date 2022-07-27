@@ -5,22 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #head{
+            color: blue;
+        }
+        .paragraph{
+            text-decoration: line-through;
+        }
+    </style>
 </head>
 <body>
-    <button onclick="document.write('This is my first button')">Click me </button>
-    <p id="greet"></p>
-    <p id="result"></p>
-
-
-
-    <script>
-        var message = "Hello";
-var name = "Grace";
-var num = 4;
-console.log(message + name)
-console.log(name + num)
-console.log(typeof(message + name))
-console.log("How are you", name)
-    </script>
+  <div id="head">
+    <h3>DOM in JavaScript</h3>
+    <p class="paragraph">Hello There</p>
+  </div>
 </body>
+<script src="index.js"></script>
 </html>
